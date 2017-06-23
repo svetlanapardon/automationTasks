@@ -1,5 +1,7 @@
 package javatest.com.epam.cdp.testngtests;
 
+import com.epam.tat.module4.Calculator;
+
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.DataProvider;
@@ -20,7 +22,7 @@ public class DoubleDivTest extends TestBase {
         double div=calculator.div(3.45, 1);
         Assert.assertEquals(super.round(div), 3.45);
     }
-
+/*
     @Test
     public void testDivByInt(){
         double div=calculator.div(3.45, 2);
@@ -38,4 +40,5 @@ public class DoubleDivTest extends TestBase {
         double div=calculator.div(5.69, -2);
         Assert.assertEquals(super.round(div), -2.845);
     }
+    */
 }

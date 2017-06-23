@@ -11,11 +11,7 @@ import org.testng.annotations.Test;
  */
 public class LongSumTest extends TestBase {
 
-    @Test(dataProvider = "sumDataProvider", groups = "CP")
-    public void testSum(long a, long b, long expected){
-        long sum=calculator.sum(a, b);
-        Assert.assertEquals(sum, expected);
-    }
+
     @DataProvider(name = "dataProvider")
     public static Object[][] sumDataProvider(){
         return new Object[][]{
@@ -26,6 +22,13 @@ public class LongSumTest extends TestBase {
                 {300,0,300}
         };
     }
+
+    @Test(dataProvider = "sumDataProvider", groups = "CP")
+    public void testSum(long a, long b, long expected){
+        long sum=calculator.sum(a, b);
+        Assert.assertEquals(sum, expected);
+    }
+
     @AfterMethod
     public void afterMethod(){System.out.println("LongSumTest");}
 

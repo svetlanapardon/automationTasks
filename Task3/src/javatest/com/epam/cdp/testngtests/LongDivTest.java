@@ -33,6 +33,6 @@ public class LongDivTest extends TestBase {
     @Test
     public void testDivByNeg(){
         double div=calculator.div(10, -5);
-        Assert.assertEquals(div, -2);
+        Assert.assertEquals(div, -2.0);
     }
 }

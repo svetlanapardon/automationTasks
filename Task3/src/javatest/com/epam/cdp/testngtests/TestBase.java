@@ -1,7 +1,7 @@
 package javatest.com.epam.cdp.testngtests;
 
 import com.epam.tat.module4.Calculator;
-import org.testng.annotations.*;
+import org.testng.annotations.BeforeMethod;
 
 /**
  * Created by svetlana on 6/21/17.
@@ -9,7 +9,7 @@ import org.testng.annotations.*;
     public class TestBase {
         protected Calculator calculator;
 
-        @BeforeMethod
+        @BeforeMethod(alwaysRun = true)
         public void setUp(){
             calculator=new Calculator();
             System.out.println("creating new instance of calculator");

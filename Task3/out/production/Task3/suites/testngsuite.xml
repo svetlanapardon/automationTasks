@@ -1,7 +1,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
 <suite name = "CalculatorTestNG" verbose="1">
-    <test name="Calculator">
+    <test name="Calculator - CP">
         <groups>
             <run>
                 <include name="CP"/>
@@ -17,5 +17,10 @@
             <class name = "javatest.com.epam.cdp.testngtests.PowSqrtTest" ></class>
             <class name = "javatest.com.epam.cdp.testngtests.SubTest" ></class>
         </classes>
+    </test>
+    <test name="Calculator - all-tests">
+        <packages>
+            <package name="javatest.com.epam.cdp.testngtests"/>
+        </packages>
     </test>
 </suite>

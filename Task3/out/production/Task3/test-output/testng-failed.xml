@@ -8,22 +8,51 @@
       </run>
     </groups>
     <classes>
-      <class name="javatest.com.epam.cdp.testngtests.DoubleSumTest">
-        <methods>
-          <include name="testSum" invocation-numbers="0 1 2 3 4"/>
-        </methods>
-      </class> <!-- javatest.com.epam.cdp.testngtests.DoubleSumTest -->
-      <class name="javatest.com.epam.cdp.testngtests.LongSumTest">
-        <methods>
-          <include name="testSum" invocation-numbers="0 1 2 3 4"/>
-        </methods>
-      </class> <!-- javatest.com.epam.cdp.testngtests.LongSumTest -->
       <class name="javatest.com.epam.cdp.testngtests.SubTest">
         <methods>
-          <include name="doubleSub" invocation-numbers="0 1 2 3 4"/>
-          <include name="longSub" invocation-numbers="0 1 2 3 4 5 6"/>
+          <include name="setUp"/>
         </methods>
       </class> <!-- javatest.com.epam.cdp.testngtests.SubTest -->
+      <class name="javatest.com.epam.cdp.testngtests.MultTest">
+        <methods>
+          <include name="LongMultTest" invocation-numbers="0 1 2 3 4"/>
+          <include name="DoubleMultTest" invocation-numbers="0 1 2 3"/>
+        </methods>
+      </class> <!-- javatest.com.epam.cdp.testngtests.MultTest -->
+      <class name="javatest.com.epam.cdp.testngtests.TrigonometryTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="cos0"/>
+          <include name="sin90"/>
+        </methods>
+      </class> <!-- javatest.com.epam.cdp.testngtests.TrigonometryTest -->
+      <class name="javatest.com.epam.cdp.testngtests.PowSqrtTest">
+        <methods>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- javatest.com.epam.cdp.testngtests.PowSqrtTest -->
+      <class name="javatest.com.epam.cdp.testngtests.DoubleSumTest">
+        <methods>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- javatest.com.epam.cdp.testngtests.DoubleSumTest -->
+      <class name="javatest.com.epam.cdp.testngtests.DoubleDivTest">
+        <methods>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- javatest.com.epam.cdp.testngtests.DoubleDivTest -->
+      <class name="javatest.com.epam.cdp.testngtests.LongSumTest">
+        <methods>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- javatest.com.epam.cdp.testngtests.LongSumTest -->
+      <class name="javatest.com.epam.cdp.testngtests.LongDivTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="testDivByOne"/>
+          <include name="testDivByLong"/>
+        </methods>
+      </class> <!-- javatest.com.epam.cdp.testngtests.LongDivTest -->
     </classes>
   </test> <!-- Calculator(failed) -->
 </suite> <!-- Failed suite [CalculatorTestNG] -->
