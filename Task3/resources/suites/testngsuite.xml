@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name = "CalculatorTestNG" verbose="1">
+    <test name="Calculator">
+        <groups>
+            <run>
+                <include name="CP"/>
+            </run>
+        </groups>
+        <classes>
+            <class name = "javatest.com.epam.cdp.testngtests.LongSumTest" ></class>
+            <class name = "javatest.com.epam.cdp.testngtests.DoubleSumTest" ></class>
+            <class name = "javatest.com.epam.cdp.testngtests.LongDivTest" ></class>
+            <class name = "javatest.com.epam.cdp.testngtests.TrigonometryTest" ></class>
+            <class name = "javatest.com.epam.cdp.testngtests.MultTest" ></class>
+            <class name = "javatest.com.epam.cdp.testngtests.DoubleDivTest" ></class>
+            <class name = "javatest.com.epam.cdp.testngtests.PowSqrtTest" ></class>
+            <class name = "javatest.com.epam.cdp.testngtests.SubTest" ></class>
+        </classes>
+    </test>
+</suite>

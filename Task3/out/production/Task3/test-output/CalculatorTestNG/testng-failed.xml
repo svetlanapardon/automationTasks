@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [CalculatorTestNG]">
+  <test name="Calculator(failed)">
+    <groups>
+      <run>
+        <include name="CP"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="javatest.com.epam.cdp.testngtests.DoubleSumTest">
+        <methods>
+          <include name="testSum" invocation-numbers="0 1 2 3 4"/>
+        </methods>
+      </class> <!-- javatest.com.epam.cdp.testngtests.DoubleSumTest -->
+      <class name="javatest.com.epam.cdp.testngtests.LongSumTest">
+        <methods>
+          <include name="testSum" invocation-numbers="0 1 2 3 4"/>
+        </methods>
+      </class> <!-- javatest.com.epam.cdp.testngtests.LongSumTest -->
+      <class name="javatest.com.epam.cdp.testngtests.SubTest">
+        <methods>
+          <include name="doubleSub" invocation-numbers="0 1 2 3 4"/>
+          <include name="longSub" invocation-numbers="0 1 2 3 4 5 6"/>
+        </methods>
+      </class> <!-- javatest.com.epam.cdp.testngtests.SubTest -->
+    </classes>
+  </test> <!-- Calculator(failed) -->
+</suite> <!-- Failed suite [CalculatorTestNG] -->
