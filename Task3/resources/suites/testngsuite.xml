@@ -1,6 +1,6 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
-<suite name = "CalculatorTestNG" verbose="1">
+<suite name = "CalculatorTestNG" verbose="1" parallel="true">
     <test name="Calculator - CP">
         <groups>
             <run>

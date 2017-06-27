@@ -7,24 +7,25 @@ import org.testng.annotations.Test;
  * Created by svetlana on 6/21/17.
  */
 public class LongDivTest extends TestBase {
-    @Test(groups = {"CP"}, expectedExceptions = NumberFormatException.class)
+
+    @Test(groups = "CP", expectedExceptions = NumberFormatException.class)
     public void testDivByZero() throws NumberFormatException{
         double div=calculator.div(2, 0);
     }
 
-    @Test(groups={"CP"})
+    @Test(groups="CP")
     public void testDivByOne(){
-        double div=calculator.div(340, 1);
+        long div=calculator.div(340, 1);
         Assert.assertEquals(div, 340);
     }
 
     @Test
     public void testDivByInt(){
         double div=calculator.div(150, 2);
-        Assert.assertEquals(div, 75);
+        Assert.assertEquals(div, 75.0);
     }
 
-    @Test(groups={"CP"})
+    @Test(groups="CP")
     public void testDivByLong(){
         double div=calculator.div(4, 3);
         Assert.assertEquals(super.round(div), 1.33);

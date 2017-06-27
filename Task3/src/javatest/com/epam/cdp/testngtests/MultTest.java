@@ -12,18 +12,6 @@ import org.testng.annotations.Test;
  */
 public class MultTest extends TestBase {
 
-    @BeforeMethod
-    public void setUp() {
-        calculator = new Calculator();
-        System.out.println("creating new instance of calculator");
-    }
-
-    @Test(dataProvider = "longDataProvider", groups = "CP")
-    public void LongMultTest(long a, long b, long expected) {
-        long mult = calculator.mult(a, b);
-        Assert.assertEquals(mult, expected);
-    }
-
     @DataProvider(name = "longDataProvider")
     public static Object[][] longDataProvider() {
         return new Object[][]{
@@ -35,12 +23,6 @@ public class MultTest extends TestBase {
         };
     }
 
-    @Test(dataProvider = "doubleDataProvider", groups = "CP")
-    public void DoubleMultTest(double a, double b, double expected) {
-        double mult = calculator.mult(a, b);
-        Assert.assertEquals(mult, expected);
-    }
-
     @DataProvider(name = "doubleDataProvider")
     public static Object[][] doubleDataProvider() {
         return new Object[][]{
@@ -50,5 +32,17 @@ public class MultTest extends TestBase {
                 {0.25, 5, 1}
         };
     }
+    @Test(dataProvider = "longDataProvider", groups = "CP")
+    public void LongMultTest(long a, long b, long expected) {
+        long mult = calculator.mult(a, b);
+        Assert.assertEquals(mult, expected);
+    }
+
+    @Test(dataProvider = "doubleDataProvider", groups = "CP")
+    public void DoubleMultTest(double a, double b, double expected) {
+        double mult = calculator.mult(a, b);
+        Assert.assertEquals(mult, expected);
+    }
+
 }
 
